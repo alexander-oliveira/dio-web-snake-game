@@ -55,7 +55,7 @@ function startGame(){
             break;
         case "down":
             snakeY += box;
-            if(snakeY > screenHeight) snakeY = 0;
+            if(snakeY > (screenHeight-box)) snakeY = 0; 
             break;
         case "left":
             snakeX -= box;
@@ -63,7 +63,7 @@ function startGame(){
             break;
         case "right":
             snakeX += box;
-            if(snakeX > screenWidth) snakeX = 0;
+            if(snakeX > (screenWidth-box)) snakeX = 0;
             break;
     }
 
