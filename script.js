@@ -9,11 +9,14 @@ snake[0] = {
 let direction = "down";
 let screenWidth = box * 16;
 let screenHeight = box * 16;
-let food = {
-    x: Math.floor(Math.random() * 15 + 1) * box,
-    y: Math.floor(Math.random() * 15 + 1) * box
-}
+let food = randomLocation();
 
+function randomLocation(){
+    return {
+        x: Math.floor(Math.random() * 15 + 1) * box,
+        y: Math.floor(Math.random() * 15 + 1) * box
+    }
+}
 function setBackground(){
     context.fillStyle = "lightgreen";
     context.fillRect(0, 0, screenWidth, screenWidth);
