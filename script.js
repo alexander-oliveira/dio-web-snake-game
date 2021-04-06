@@ -62,6 +62,13 @@ function startGame(){
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
     
+    for(i=1; i < snake.length; i++){
+        if(snakeX == snake[i].x && snakeY == snake[i].y){
+            clearInterval(game);
+            alert("Game Over!");
+        }
+    }
+
     switch(direction){
         case "up":
             snakeY -= box;
