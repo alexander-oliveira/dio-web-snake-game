@@ -18,20 +18,20 @@ function randomLocation(){
     }
 }
 function setBackground(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "#99cc00";
     context.fillRect(0, 0, screenWidth, screenWidth);
 }
 
 function drawSnake(){
     for(i=0; i < snake.length; i++){
-        context.fillStyle = "green";
+        context.fillStyle = "#608000";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 
 function drawFood(){
-    context.fillStyle = "red";
+    context.fillStyle = "#cc5200";
     context.fillRect(food.x, food.y, box, box);
 }
 

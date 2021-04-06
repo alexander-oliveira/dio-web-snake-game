@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(
+        circle at center,
+        #99cc00 60%,
+        #608000
+        );
+}
+h1 {
+    font-family: "Press Start 2P", sans;
+    color: #608000;
+}
